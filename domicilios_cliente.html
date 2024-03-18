@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/ventas_clientes.css">
+    <title>Porvenir | Domicilios</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <!--Barra de navegacion-->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="bi bi-list"></i>
+        </label>
+        <a href="#" class="porvenir">
+          <img src="img/Porvenir.png" alt="">
+        </a>
+        <ul class="reset">
+          <li class="reset2"><a href="ventas_cliente.html" class="impor" target="_blank">Productos</a></li>
+          <li class="reset2"><a href="domicilios_cliente.html" class="impor" target="_blank">Domicilios</a></li>
+          <li class="reset2"><a href="login.html" class="impor" target="_blank"><i class="bi bi-person" style="width: 15%;"></i>Iniciar sesion</a></li>
+        </ul>
+
+        <!--Comienzo pantalla de carrito-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <img class="carrito" src="img/carrito.png" alt="">
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Carrito</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+            <hr>
+            <!--Productos del carrito-->
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!--INICIO DEL FORMULARIO-->
+<br><br><br><br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="img/logod.png" width="30%">
+        </div>
+        <div class="col-md-6">
+            <h2>
+                Estamos en 12 ciudades y contamos con 25 tiendas Supermercados Porvenir a tu disposición.
+            </h2>
+        </div>
+  </div>
+  <br><br><br>
+  <div class="container">
+      <div class="row">
+            <div class="col-md-12">
+              <p style="text-align: center; font-size: 25px;" >
+                ¿Buscas la línea de tu ciudad o quieres contactarnos por WhatsApp? ¡Estamos aquí para ayudarte!
+                Realiza los pedidos de tus productos a través de correo electrónico:
+                <p style="color: red ; text-align: center; font-size: 25px;">Domicilios_Porvenir@gmail.com</p>
+               <p style="text-align: center; font-size: 25px;">
+                  * El correo electrónico de recepción de domicilios telefónicos solo aplica para productos de mercado.
+                <br>
+                <p style="color: orangered; text-align: center; font-size: 25px;">(Los números de contacto son exclusivos para realizar pedidos a domicilio en productos de mercado.)</p>
+              </p>
+              
+            </div>
+      </div>
+  </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p style="color: rgb(0, 133, 0); font-size: 35px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> El envió le cuesta: $8.000*</p> 
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <h3 style="color: red; text-align: center;"> Bogotá</h3>
+            <p>
+                <a href="https://www.google.com/maps/search/Supermercado+El+Porvenir+en+bogota/@4.6479907,-74.2027524,12z/data=!3m1!4b1?entry=ttu" target="_blank"> <img src="img/dir.jpeg" style="border: 3px solid black;"></a>
+            </p>
+        </div>
+        <div class="col-md-4">
+          <h3 style="color: red; text-align: center;"> Cali</h3>
+            <p>
+                <a href="https://www.google.com/maps/search/supermercado+el+porvenir+cali%7B/@3.4591109,-76.5160202,18z/data=!3m1!4b1?entry=ttu" target="_blank"> <img src="img/dir.jpeg" style="border: 3px solid black;"></a>
+            </p>
+        </div>
+        <div class="col-md-4">
+          <h3 style="color: red; text-align: center;"> Medellín</h3>
+            <p>
+              <a href="https://www.google.com/maps/search/supermercado+el+porvenir+medellin/@6.3124667,-75.6596318,12z/data=!3m1!4b1?entry=ttu" target="_blank"> <img src="img/dir.jpeg" style="border: 3px solid black;"></a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 style="font-size: 35px;">  Metodos de pago </h3>
+            <p style="font-size: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+              El pago se realiza al momento de la entrega, puedes pagar en efectivo, tarjetas débito y crédito.
+            </p>
+        </div>
+    </div>
+</div>
+   
+<div class="container">
+    <div class="row">
+          <div class="col-md-2" style="border: 3px solid orangered; margin: 55px; text-align: center; justify-content: space-between;">
+            <img src="img/di.jpg" width="70%" style="padding: 15px; margin: 15px;"> 
+            <p style="color: orangered; text-align: center;"> Efectivo</p>
+          </div>
+          <div class="col-md-2" style="border: 3px solid orangered; margin: 55px; text-align: center; justify-content: space-between;">
+            <img src="img/tar.jpg" width="80%" style="padding: 15px; margin: 15px;"> <br>
+            <p style="color: orangered; text-align: center;"> Tarjeta
+            <p style="color: orangered; text-align: center;"> Credito/Debito </p>
+          </div>
+          <div class="col-md-2" style="border: 3px solid orangered; margin: 55px; text-align: center; justify-content: space-between;">
+            <img src="img/contrpng.png" width="80%" style="padding: 15px; margin: 15px;"> 
+            <p style="color: orangered; text-align: center;"> Contra entrega</p>
+          </div>
+          <div class="col-md-2" style="border: 3px solid orangered; margin: 55px; text-align: center; justify-content: space-between;">
+            <img src="img/cen.jpeg" width="80%" style="padding: 15px; margin: 15px;"> <br>
+            <p style="color: orangered; text-align: center;"> Tarjeta Cencosud </p>
+          </div>
+    </div>
+</div>
+
+<br><br><br>
+<center>
+  <div class="countainer" style="background-color: orange; width: 80%; margin: 25px; padding: 25px; border-top-right-radius: 25px; border-bottom-left-radius: 25px;">
+    <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+              <h3 style="color:orangered; text-align: center; font-size: 45px; font-family: 'Times New Roman', Times, serif;"> Confirmar Compra</h3>
+              <br>
+              <form action="">
+                <label for="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Nombre :</label>
+                <input type="text" placeholder="Nombre" style="margin: 5px; border-radius: 25px; box-shadow: 1px 2px 2px 2px black; text-align: center;"> <br> <br>
+
+                <label for="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Direccion :</label>
+                <input type="text" placeholder="Direccion" style="margin: 5px; border-radius: 25px; box-shadow: 1px 2px 2px 2px black; text-align: center;"> <br> <br>
+
+                <label for="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Telefono: </label>
+                <input type="text" placeholder="Telefono" style="margin: 5px; border-radius: 25px;box-shadow: 1px 2px 2px 2px black; text-align: center;"> <br> <br>
+
+                <label for="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Metodo de pago :</label>
+                <select name="metodo" style="margin: 5px; border-radius: 25px; box-shadow: 1px 2px 2px 2px black; "><br> <br>
+                    <option value="seleccione"></option>
+                    <option value="seleccione"> Efectivo</option>
+                    <option value="seleccione"> Tarjeta Credito/Debito</option>
+                    <option value="seleccione"> Contra entrega</option>
+                    <option value="seleccione"> Tarjeta Cencosud</option>
+                </select>
+              <br> <br>
+
+              <input type="submit" value="Enviar" style="border-radius: 15px; background-color:green; color: white; padding: 10px; margin: 10px; box-shadow: 1px 1px 1px 1px black;">
+              <input type="submit" value="Limpiar" style="border-radius: 15px;  background-color:red; color: white; padding: 10px; margin: 10px; box-shadow: 1px 1px 1px 1px black;">
+            </form>
+          </div>
+    </div>
+</div>
+</center>

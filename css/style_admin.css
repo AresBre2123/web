@@ -1,0 +1,26 @@
+@media (max-width: 1024px){
+    .checkbtn{
+        display: block flow;
+    }
+    .reset{
+        position: fixed;
+        width: 100%;
+        height: 350px;
+        background: green;
+        top: 96px;
+        left: -100%;
+        text-align: center;
+        transition: all .30s;
+    }
+    .reset2{
+        display: block;
+        margin: 40px 0px;
+        line-height: 20px;
+    }
+    .import{
+        font-size: 20px;
+    }
+    #check:checked ~ .reset{
+        left: 0;
+    }
+}

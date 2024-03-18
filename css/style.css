@@ -1,0 +1,170 @@
+#ofertas{
+    padding-top: 10%;
+}
+
+a img{
+    width: 200px;
+}
+
+nav{
+    background-color: orange;
+}
+
+#offcanvasDarkNavbar{
+    background-color: green;
+}
+
+#offcanvasDarkNavbar{
+    color: white;
+}
+
+.reset{
+    float: right;
+    margin-right: 20px;
+}
+
+.reset2{
+    display:inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+.impor{
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    display: inline-block;
+    padding: 7px 13px;
+    text-align: center;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 953px) {
+    .import{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 997px){
+    .checkbtn{
+        display: block flow;
+    }
+    .reset{
+        position: fixed;
+        width: 100%;
+        height: 350px;
+        background: green;
+        top: 96px;
+        left: -100%;
+        text-align: center;
+        transition: all .30s;
+    }
+    .reset2{
+        display: block;
+        margin: 40px 0px;
+        line-height: 20px;
+    }
+    .import{
+        font-size: 20px;
+    }
+    #check:checked ~ .reset{
+        left: 0;
+    }
+}
+
+.carrito{
+    width: 30px;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: orange;
+}
+
+.boton{
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.boton:hover{
+    background-color: rgb(143, 100, 22);
+    color: white;
+}
+
+.card{
+    margin: 30px 40px auto;
+}
+
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.perfil{
+    width: 30px;
+    padding-right: 5px;
+}
+
+.bt-naranja{
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+.bt-naranja:hover{
+    background-color: rgb(143, 100, 22);
+}
+
+.bt-verde{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.bt-verde:hover{
+    background-color: rgb(0, 77, 0);
+}
+
+.bt-rojo{
+   background-color: rgb(178, 0, 0);
+   color: white;
+   padding: 5px 10px;
+   border: none;
+   border-radius: 5px;
+   font-size: 18px;
+}
+
+.bt-rojo:hover{
+    background-color: rgb(108, 0, 0);
+}
+
+td{
+    background-color: rgba(255, 181, 43, 0.616);
+}
+
+th{
+    background-color: rgba(17, 162, 17, 0.512);
+}

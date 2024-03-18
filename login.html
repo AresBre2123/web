@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <button type="button" class="btn-close" aria-label="Close"><a href="index.html">X</a></button>
+                <h1>Registro</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Utiliza tu Correo</span>
+                <input type="email" placeholder="Correo">
+                <input type="password" placeholder="Contraseña">
+                <input type="number" placeholder="Documento">
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="loginForm">
+                <button type="button" class="btn-close" aria-label="Close"><a href="index.html">X</a></button>
+                <h1>Iniciar sesión</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Utiliza tu Correo y Contraseña</span>
+                <input name="Correo" type="email" placeholder="Correo">
+                <input name="Contraseña" type="password" placeholder="Contraseña">
+                <a href="#">¿Olvidaste tu Contraseña?</a>
+                <button type="submit" id="login">Iniciar sesión</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>Ingrese sus datos personales para utilizar todas las funciones del sitio</p>
+                    <button class="hidden" id="loginBtn">Iniciar sesión</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¡Hola amig@!</h1>
+                    <p>Regístrese con sus datos personales para utilizar todas las funciones del sitio</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('loginBtn');
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('loginForm').addEventListener('submit', function(e) {
+                e.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+                var usuario = document.querySelector('input[name="Correo"]').value;
+                var pass = document.querySelector('input[name="Contraseña"]').value;
+
+                if (usuario === 'admin@gmail.com' && pass === '1234') {
+                    window.location.href = 'inventario_admin.html';
+                } else if (usuario === 'cliente@gmail.com' && pass === '1235') {
+                    window.location.href = 'index.html';
+                } else {
+                    window.location.href = 'login.html';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

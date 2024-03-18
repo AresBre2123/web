@@ -1,0 +1,54 @@
+
+.perfil {
+    width: 3vw;
+    padding-right: 1vw; /* Usando vw para un padding relativo al ancho de la ventana */
+}
+.TITULO{
+    text-decoration: underline;
+    color: red;
+    margin: 20px;
+
+}
+
+.prom1 a img{
+   width: 45%;
+   margin: 2.4%;
+}
+
+.prom2 a img{
+    width: 95%;
+    margin: 2.5%;
+}
+
+.logo {
+    width: 100px; 
+    height: 100px;
+    margin: 10px; 
+    border: 2px solid #333; 
+    border-radius: 50%; 
+    display: block; 
+    text-align: center; 
+    background-color: transparens; 
+    
+  }
+  
+  .logo img {
+    max-width: 100%; 
+    max-height: 100%; 
+
+  }
+
+.final{
+    background-color: rgb(248, 149, 0);
+    padding: 2%;
+}
+
+.botones1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.eliminar a{
+    color: #fff;
+    text-decoration: none;
+}

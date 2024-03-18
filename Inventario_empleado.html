@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Porvenir | Inventario</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.datatables.net/v/dt/dt-2.0.2/datatables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQq7Ml8WsgGqyC05XgoaX/Eg6/\_Hlh seIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="scroll">
+
+  <header>
+    <!--Barra de navegacion-->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="bi bi-list"></i>
+        </label>
+        <a href="" class="porvenir">
+          <img src="img/Porvenir.png" alt="">
+        </a>
+        <ul class="reset">
+          <li class="reset2"><a href="index.html" class="impor" target="_blank">Productos</a></li>
+          <li class="reset2"><a href="Inventario_empleado.html" class="impor" target="_blank">Inventario</a></li>
+          <li class="reset2"><a href="domicilios_cliente.html" class="impor" target="_blank">Domicilios</a></li>
+          <li class="reset2"><a href="login.html" class="impor" target="_blank"><i class="bi bi-person" style="width: 15%;"></i>Iniciar sesion</a></li>
+        </ul>
+
+        <!--Comienzo pantalla de carrito-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <img class="carrito" src="img/carrito.png" alt="">
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Carrito</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+            <hr>
+            <!--Productos del carrito-->
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="card mb-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/huevos.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Huevos</h5>
+                        <p class="card-text">si</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Cuerpo de pagina | Inventario-->
+  <div style="padding: 130px 10px 10px 10px;">
+    <table id="Inventario" class="display" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Categoria</th>
+          <th>Valor</th>
+          <th>Cantidad</th>
+          <th>Caducidad</th>
+          <th>Proveedor</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pollo</td>
+          <td>Carnicos</td>
+          <td>15.000 $</td>
+          <td>85 unidades</td>
+          <td>N/A</td>
+          <td>Viandcol</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Manzanas</td>
+          <td>Frutas</td>
+          <td>2.000 $</td>
+          <td>25 unidades</td>
+          <td>30/03/2024</td>
+          <td>Fruvecom S.A.S.</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Yogurt</td>
+          <td>Lacteos</td>
+          <td>2.500 $</td>
+          <td>15 unidades</td>
+          <td>15/04/2024</td>
+          <td>Colun</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Salchichas enlatadas</td>
+          <td>Productos enlatados</td>
+          <td>3.500 $</td>
+          <td>10 unidades</td>
+          <td>29/04/2025</td>
+          <td>Levapan</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Paquete de uvas</td>
+          <td>Frutas</td>
+          <td>8.000 $</td>
+          <td>50 unidades</td>
+          <td>29/03/2024</td>
+          <td>Fruvecom S.A.S.</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Lechuga</td>
+          <td>Verduras</td>
+          <td>2.500 $</td>
+          <td>27 unidades</td>
+          <td>16/05/2024</td>
+          <td>Assolim</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Lentejas</td>
+          <td>Granos</td>
+          <td>17.000 $</td>
+          <td>59 unidades</td>
+          <td>2028-08-06</td>
+          <td>Assolim</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Pan de centeno</td>
+          <td>Panaderia</td>
+          <td>20.000 $</td>
+          <td>55 unidades</td>
+          <td>2024-10-14</td>
+          <td>Dismapan</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Plátanos</td>
+          <td>Frutas</td>
+          <td>9.000 $</td>
+          <td>39 unidades</td>
+          <td>2024-09-15</td>
+          <td>Fruvecom S.A.S.</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Champú</td>
+          <td>Limpieza personal</td>
+          <td>18.000 $</td>
+          <td>50 unidades</td>
+          <td>2008-12-13</td>
+          <td>Kipclin</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Arroz</td>
+          <td>Granos</td>
+          <td>7.000 $</td>
+          <td>30 unidades</td>
+          <td>2030-12-19</td>
+          <td>Assolim</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Crema dental</td>
+          <td>Limpieza personal</td>
+          <td>8.000 $</td>
+          <td>22 unidades</td>
+          <td>2032-03-03</td>
+          <td>Kipclin</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Leche</td>
+          <td>Lacteos</td>
+          <td>16.000 $</td>
+          <td>36 unidades</td>
+          <td>2029-10-16</td>
+          <td>Colun</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Baguette</td>
+          <td>Panaderia</td>
+          <td>13.000 $</td>
+          <td>43 unidades</td>
+          <td>N/A</td>
+          <td>Dismapan</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Jabón para manos</td>
+          <td>LImpieza personal</td>
+          <td>15.000 $</td>
+          <td>19 unidades</td>
+          <td>2035-03-17</td>
+          <td>Kipclin</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Harina de trigo</td>
+          <td>Panaderia</td>
+          <td>18.500 $</td>
+          <td>66 unidades</td>
+          <td>2031-11-27</td>
+          <td>Colun</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Piñas</td>
+          <td>Frutas</td>
+          <td>5.400 $</td>
+          <td>64 unidades</td>
+          <td>2024-06-09</td>
+          <td>Fruvecom S.A.S.</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Garbanzos</td>
+          <td>Granos</td>
+          <td>3.000 $</td>
+          <td>59 unidades</td>
+          <td>2029-04-10</td>
+          <td>Assolim</td>
+          <td>
+            <button class="bt-naranja">
+              <a href="error_400.html"><i class="fas fa-pencil-alt"></i></a>
+            </button>
+
+            <button class="bt-verde">
+              <a href="error_400.html"><i class="fas fa-edit"></i></a>
+            </button>
+
+            <button class="bt-rojo">
+              <a href="error_500.html"><i class="fas fa-times"></i></a>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Producto</th>
+          <th>Categoria</th>
+          <th>Valor</th>
+          <th>Cantidad</th>
+          <th>Caducidad</th>
+          <th>Proveedor</th>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="https://cdn.datatables.net/v/dt/dt-2.0.2/datatables.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+  <script>
+    new DataTable('#Inventario');
+  </script>
+  <style>
+    button a {
+      color: white;
+    }
+  </style>
+  <!--Fin cuerpo de pagina | Inventario-->
+</body>
+
+</html>
